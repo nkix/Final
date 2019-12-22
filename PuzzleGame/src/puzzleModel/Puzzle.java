@@ -65,5 +65,14 @@ public class Puzzle {
 		
 		return true;
 	}
+	
+	public boolean isFilled() {
+		for(int r=0; r<num; r++) {
+			for(int c=0; c<num; c++) {
+				if(puzzle[r][c]==-1)return false;
+			}
+		}
+		return true;
+	}
 
 }
